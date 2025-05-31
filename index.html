@@ -1,0 +1,309 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Castillo - Minimarket Premium</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header (dentro de body) -->
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo">
+          <img src="images/castillo.png" alt="El Castillo" class="logo-img" />
+          <div>
+            <h1>El Castillo</h1>
+            <p>Minimarket Premium</p>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Buscar en el reino de productos..." />
+          <span class="shortcut">⌘K</span>
+        </div>
+
+        <div class="actions">
+          <button class="icon-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-heart-icon lucide-heart"
+            >
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+              />
+            </svg>
+            <span class="label">Favoritos</span>
+          </button>
+          <button class="cart-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+            >
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              />
+            </svg>
+            Carrito <span class="count">(3)</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="badge"
+              ><i data-lucide="badge-check"></i> Bienvenido al Reino de la
+              Calidad</span
+            >
+            <h1>
+              Tu <span class="highlight">Castillo</span><br />
+              de Sabores
+            </h1>
+            <p>
+              En El Castillo, cada producto es una joya culinaria.<br />
+              Descubre la realeza de los sabores con la calidad que mereces.
+            </p>
+
+            <div class="hero-buttons">
+              <button class="btn-primary">
+                <i data-lucide="crown"></i> Explorar Reino →
+              </button>
+              <button class="btn-outline">
+                <i data-lucide="search"></i> Ver Catálogo
+              </button>
+            </div>
+
+            <div class="hero-stats">
+              <div><strong>50K+</strong><br />Productos</div>
+              <div><strong>4.9★</strong><br />Calificación</div>
+              <div><strong>24/7</strong><br />Abierto</div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <!-- Reemplaza con tu imagen real -->
+            <div class="image-placeholder">
+              <img src="images/cocina.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="truck"></i>
+            </div>
+            <h3>Entrega Real</h3>
+            <p>Servicio digno de la realeza</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <h3>Garantía del Reino</h3>
+            <p>Protección total garantizada</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="crown"></i>
+            </div>
+            <h3>Calidad Imperial</h3>
+            <p>Solo lo mejor para ti</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products">
+        <div class="container">
+          <h2 class="section-title">
+            Tesoros del <span class="highlight">Reino</span>
+          </h2>
+          <p class="section-subtitle">
+            Los productos más preciados de nuestro castillo
+          </p>
+
+          <div class="product-grid">
+            <!-- Tarjeta de producto -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/productos/mayo.jpg" alt="Mayo" />
+                <span class="badge2 red">-30%</span>
+                <span class="badge2 blue right">Kraft</span>
+              </div>
+              <div class="product-content">
+                <h3>Real Mayo 200g</h3>
+                <div class="rating">⭐⭐⭐⭐☆ <span>(124)</span></div>
+                <div class="price">
+                  <span class="current">$1.250</span>
+                  <span class="old">$3.000</span>
+                </div>
+                <button class="btn-cart">🛒 Agregar al Carrito</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/productos/arroz.jpg" alt="Leche de almendra" />
+                <span class="badge2 red">-30%</span>
+                <span class="badge2 blue right">Tucapel</span>
+              </div>
+              <div class="product-content">
+                <h3>Arroz 2° grado 1KG</h3>
+                <div class="rating">⭐⭐⭐⭐☆ <span>(89)</span></div>
+                <div class="price">
+                  <span class="current">$1.950</span>
+                  <span class="old">$2.300</span>
+                </div>
+                <button class="btn-cart">🛒 Agregar al Carrito</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/productos/pan.png" alt="Pan Integral" />
+                <span class="badge2 blue right">PAN</span>
+              </div>
+              <div class="product-content">
+                <h3>Harina precocida</h3>
+                <div class="rating">⭐⭐⭐⭐☆ <span>(156)</span></div>
+                <div class="price">
+                  <span class="current">$1.700</span>
+                </div>
+                <button class="btn-cart">🛒 Agregar al Carrito</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/productos/JAMON.png" alt="Salmón" />
+                <span class="badge2 blue right">San Jorge</span>
+              </div>
+              <div class="product-content">
+                <h3>Fiambre Sandwich</h3>
+                <div class="rating">⭐⭐⭐⭐☆ <span>(67)</span></div>
+                <div class="price">
+                  <span class="current">$1.000</span>
+                </div>
+                <button class="btn-cart">🛒 Agregar al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="categories"></section>
+
+      <section id="newsletter" class="newsletter">
+        <div class="container">
+          <div class="newsletter-content">
+            <div class="icon">
+              <i data-lucide="castle"></i>
+            </div>
+            <h2>Únete a la Corte Real</h2>
+            <p>
+              Recibe invitaciones exclusivas a nuestros eventos especiales y
+              ofertas<br />
+              dignas de la realeza
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Tu email real" required />
+              <button type="submit">Unirse</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img
+            src="images/castillo.png"
+            alt="El Castillo"
+            class="footer-logo"
+          />
+          <h3>El Castillo</h3>
+          <p>
+            Tu reino de productos premium.<br />Donde cada compra es una
+            experiencia real.
+          </p>
+        </div>
+
+        <div>
+          <h4>Salones</h4>
+          <ul>
+            <li><a href="#">Frutas & Verduras</a></li>
+            <li><a href="#">Carnes Premium</a></li>
+            <li><a href="#">Lácteos Frescos</a></li>
+            <li><a href="#">Panadería Real</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Servicio Real</h4>
+          <ul>
+            <li><a href="#">Centro de Ayuda</a></li>
+            <li><a href="#">Atención al Cliente</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Síguenos</h4>
+          <div class="social-icons">
+            <a href="#">f</a>
+            <a href="#">t</a>
+            <a href="#">i</a>
+            <a href="#">y</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="footer-bottom">
+        © 2024 El Castillo Minimarket. Todos los derechos reservados. Un reino
+        de calidad.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+      document
+        .querySelector(".newsletter-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("¡Gracias por unirte a la Corte Real!");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
